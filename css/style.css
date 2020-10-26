@@ -45,10 +45,11 @@ body {
 }
 
 form {
-  width: 380px;
+  width: 400px;
   padding: 1rem;
   background-color: #fff;
   border-radius: 20px;
+  box-shadow: 2px 2px 15px 2px rgba(0, 0, 0, 0.2);
 }
 
 .avatar {
@@ -69,8 +70,8 @@ form h2 {
   border-bottom: 2px solid #d9d9d9;
 }
 
-.input-div:after,
-.input-div:before {
+.input-div::after,
+.input-div::before {
   content: "";
   position: absolute;
   bottom: -2px;
@@ -80,11 +81,11 @@ form h2 {
   transition: .3s;
 }
 
-.input-div:after {
+.input-div::after {
   right: 50%;
 }
 
-.input-div:before {
+.input-div::before {
   left: 50%;
 }
 
@@ -97,8 +98,9 @@ form h2 {
   font-size: 15px;
 }
 
-.input-div.focus:after, .input-div.focus:before {
-    width: 50%;
+.input-div.focus::after,
+.input-div.focus::before {
+  width: 50%;
 }
 
 .input-div .one {
@@ -120,12 +122,12 @@ form h2 {
   transition: .3s;
 }
 
-.input-div > div {
+.input-div>div {
   position: relative;
   height: 45px;
 }
 
-.input-div > div h5 {
+.input-div>div h5 {
   position: absolute;
   left: 10px;
   top: 50%;
@@ -154,7 +156,7 @@ a {
   display: block;
   text-align: center;
   text-decoration: none;
-  color: #999;
+  color: #616161;
   font-size: 0.9rem;
   transition: 0.3s;
 }
@@ -184,42 +186,52 @@ a:hover {
   background-position: right;
 }
 
+.account {
+  font-weight: normal;
+}
+
 /* ====== Media Query for Responsive =====*/
 @media (max-width:1050px) {
-    .container {
-        grid-gap: 5rem;
-    }
+  .container {
+    grid-gap: 5rem;
+  }
 }
 
 @media (max-width: 1000px) {
-    form {
-        width: 290px;
-    }
+  form {
+    width: 350px;
+  }
 
-    form h2 {
-        font-size: 1.5rem;
-        margin: 8px 0;
-    }
+  form h2 {
+    font-size: 1.5rem;
+    margin: 8px 0;
+  }
 
-    .img img {
-        width: 350px;
-    }
+  .img img {
+    width: 350px;
+  }
 }
 
 @media (max-width: 900px) {
-    .img {
-        display: none;
-    }
+  .img {
+    display: none;
+  }
 
-    .container {
-        grid-template-columns: 1fr;
-    }
+  .container {
+    grid-template-columns: 1fr;
+  }
 
-    .wave {
-        display: none;
-    }
+  .wave {
+    display: none;
+  }
 
-    .login-container {
-        justify-content: center;
-    }
+  .login-container {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 600px) {
+  form {
+    width: 300px;
+  }
 }
