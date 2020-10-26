@@ -201,6 +201,18 @@ a:hover {
   margin: 0 5px;
 }
 
+.account {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.account p {
+  margin: 0 0.5rem;
+}
+
 /* ======== Media Query for Responsive ========*/
 @media (max-width:1050px) {
   .container {
