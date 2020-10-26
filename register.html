@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
+    <title>Cadastro</title>
     <!-- Custom styles-path -->
     <link rel="stylesheet" href="css/style.css">
 
@@ -23,8 +23,14 @@
         </div>
         <div class="login-container">
             <form action="index.html">
-                <img class="avatar" src="img/avatar.svg">
-                <h2>Bem-vindo de volta !</h2>
+                <h2>Cadastre-se</h2>
+                <div class="social">
+                    <p>Entrar com:</p>
+                    <div class="social-icons">
+                        <a href="#"><img src="img/facebook.png"></a>
+                        <a href="#"><img src="img/google.png"></a>
+                    </div>
+                </div>
                 <div class="input-div one">
                     <div class="i">
                         <i class="fas fa-user"></i>
@@ -36,6 +42,15 @@
                 </div>
                 <div class="input-div two">
                     <div class="i">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <div>
+                        <h5>E-mail</h5>
+                        <input class="input" type="email">
+                    </div>
+                </div>
+                <div class="input-div one">
+                    <div class="i">
                         <i class="fas fa-key"></i>
                     </div>
                     <div>
@@ -43,9 +58,18 @@
                         <input class="input" type="password">
                     </div>
                 </div>
+                <div class="input-div two">
+                    <div class="i">
+                        <i class="fas fa-key"></i>
+                    </div>
+                    <div>
+                        <h5>Confirmar Senha</h5>
+                        <input class="input" type="password">
+                    </div>
+                </div>
                 <a href="#">Esqueceu sua senha ?</a>
-                <input type="submit" class="btn" value="Entrar">
-                <p class="account">Ainda não possuí conta ? <a href="register.html">Cadastre-se</a></p>
+                <input type="submit" class="btn" value="Cadastrar">
+                <p class="account">Já possuí conta ? <a href="login.html">Entrar</a></p>
             </form>
         </div>
     </div>
