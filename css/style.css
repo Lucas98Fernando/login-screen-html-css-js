@@ -202,6 +202,10 @@ a:hover {
   padding-right: 10px;
 }
 
+.social-icons.google {
+  padding-right: 24px;
+}
+
 .facebook {
   background-image: linear-gradient(to right, #3b5998, #1976d2, #3b5998);
   border-radius: 15px;
