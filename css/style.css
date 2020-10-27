@@ -191,7 +191,7 @@ a:hover {
   align-content: center;
   align-items: center;
   justify-content: center;
-  margin: 5px 0;
+  margin: 10px 0;
   padding: 5px 0;
   height: 40px;
 }
@@ -239,6 +239,17 @@ a:hover {
 
 .account p {
   margin: 0.5rem;
+}
+
+.terms {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 0px 10px 15px 0px;
+}
+
+.terms input {
+  margin-right: 10px;
 }
 
 /* ======== Media Query for Responsive ========*/
