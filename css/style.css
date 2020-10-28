@@ -35,7 +35,7 @@ body {
 }
 
 .img img {
-  width: 450px;
+  width: 500px;
 }
 
 .login-container {
@@ -126,12 +126,12 @@ form h2 {
   transition: 0.3s;
 }
 
-.input-div > div {
+.input-div>div {
   position: relative;
   height: 40px;
 }
 
-.input-div > div h5 {
+.input-div>div h5 {
   position: absolute;
   left: 10px;
   top: 50%;
@@ -290,7 +290,7 @@ a:hover {
   }
 
   .img img {
-    width: 350px;
+    width: 400px;
   }
 }
 
@@ -316,5 +316,14 @@ a:hover {
   form {
     width: 300px;
     margin: 1rem 0;
+  }
+
+  .terms {
+    margin: 0;
+  }
+
+  .terms input {
+    margin-top: 5px;
+    align-self: start;
   }
 }
