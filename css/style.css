@@ -44,6 +44,10 @@ body {
   text-align: center;
 }
 
+.forgot {
+  padding-bottom: 10px;
+}
+
 form {
   width: 400px;
   padding: 1.2rem;
@@ -250,6 +254,22 @@ a:hover {
 
 .terms input {
   margin-right: 10px;
+}
+
+.others {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.others hr {
+  max-width: 100%;
+  width: 100%;
+  border: 1px solid #d9d9d9;
+}
+
+.others p {
+  padding: 0 10px;
 }
 
 /* ======== Media Query for Responsive ========*/
