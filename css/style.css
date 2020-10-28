@@ -272,6 +272,58 @@ a:hover {
   padding: 0 10px;
 }
 
+.confirm-container {
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.content {
+  width: 400px;
+  background-color: #fff;
+  border-radius: 20px;
+  padding: 1.2rem;
+  box-shadow: 2px 2px 15px 2px rgba(0, 0, 0, 0.2);
+}
+
+.content h2 {
+  font-size: 1.8rem;
+  margin: 10px 0;
+}
+
+.content i {
+  font-size: 50px;
+  border-radius: 100%;
+  color: #fff;
+  background-color: #addb31;
+  margin: 5px 0 25px;
+}
+
+.login a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+}
+
+.btn-login {
+  width: 100%;
+  background-image: linear-gradient(to right, #db4b23, #e73d0e, #db4b23);
+  color: #eeeeee;
+  border-radius: 15px;
+  height: 40px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  transition: 0.5s;
+  background-size: 200%;
+}
+
+.btn-login:hover {
+  color: #eaeaea;
+  background-position: right;
+}
+
 /* ======== Media Query for Responsive ========*/
 @media (max-width: 1050px) {
   .container {
@@ -292,6 +344,10 @@ a:hover {
   .img img {
     width: 400px;
   }
+
+  .content {
+    width: 350px;
+  }
 }
 
 @media (max-width: 900px) {
@@ -310,6 +366,10 @@ a:hover {
   .login-container {
     justify-content: center;
   }
+
+  .confirm-container {
+    justify-content: center;
+  }
 }
 
 @media (max-width: 600px) {
@@ -325,5 +385,9 @@ a:hover {
   .terms input {
     margin-top: 5px;
     align-self: start;
+  }
+
+  .content {
+    width: 300px;
   }
 }
