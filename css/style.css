@@ -312,6 +312,7 @@ a:hover {
   color: #eeeeee;
   border-radius: 15px;
   height: 40px;
+  font-size: 1rem;
   outline: none;
   border: none;
   cursor: pointer;
