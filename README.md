@@ -14,3 +14,8 @@
 <p align="center">
   <img src="img/recuperar.png">
 </p>
+
+<h3>Confirm screen:</h3>
+<p align="center">
+  <img src="img/confirm.png">
+</p>
