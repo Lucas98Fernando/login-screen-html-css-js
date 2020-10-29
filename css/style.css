@@ -305,23 +305,26 @@ a:hover {
 @keyframes btn-animation {
   0% {
     background-color: #addb31;
-    left: -100px;
+    left: 0px;
     top: 0px;
   }
   25% {
     background-color: #addb31;
-    left: 100px;
+    left: 0px;
     top: 0px;
+    font-size: 80px;
   }
   50% {
     background-color: #addb31;
-    left: -100px;
+    left: 0px;
     top: 0px;
+    font-size: 50px;
   }
   75% {
     background-color: green;
     left: 0px;
     top: 0px;
+    font-size: 80px;
   }
   100% {
     background-color: #addb31;
