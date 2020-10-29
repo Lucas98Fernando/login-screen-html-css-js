@@ -291,18 +291,28 @@ a:hover {
   margin: 10px 0;
 }
 
-.content i {
+.fa-check-circle {
   font-size: 50px;
   border-radius: 100%;
   color: #fff;
   background-color: #addb31;
   margin: 5px 0 25px;
   position: relative;
-  animation-name: btn-animation;
+  animation-name: confirm-animation;
   animation-duration: 4s;
 }
 
-@keyframes btn-animation {
+.fa-exclamation-circle {
+  font-size: 50px;
+  color: #ff0000;
+  background-color: #fff;
+  margin: 5px 0 25px;
+  position: relative;
+  animation-name: error-animation;
+  animation-duration: 4s;
+}
+
+@keyframes confirm-animation {
   0% {
     background-color: #addb31;
     left: 0px;
@@ -328,6 +338,38 @@ a:hover {
   }
   100% {
     background-color: #addb31;
+    left: 0px;
+    top: 0px;
+    font-size: 80px;
+  }
+}
+
+@keyframes error-animation {
+  0% {
+    color: #ff0000;
+    left: 0px;
+    top: 0px;
+  }
+  25% {
+    color: #ff0000;
+    left: 0px;
+    top: 0px;
+    font-size: 80px;
+  }
+  50% {
+    color: #ff0000;
+    left: 0px;
+    top: 0px;
+    font-size: 50px;
+  }
+  75% {
+    color: #ff1919;
+    left: 0px;
+    top: 0px;
+    font-size: 80px;
+  }
+  100% {
+    color: #ff0000;
     left: 0px;
     top: 0px;
     font-size: 80px;
