@@ -26,6 +26,7 @@ body {
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 9rem;
   padding: 0 2rem;
+  overflow-x: hidden;
 }
 
 .img {
@@ -36,12 +37,18 @@ body {
 
 .img img {
   width: 500px;
+  position: relative;
+  animation-name: left-to-right;
+  animation-duration: 4s;
 }
 
 .login-container {
   display: flex;
   align-items: center;
   text-align: center;
+  position: relative;
+  animation-name: right-to-left;
+  animation-duration: 4s;
 }
 
 .forgot {
@@ -126,12 +133,12 @@ form h2 {
   transition: 0.3s;
 }
 
-.input-div > div {
+.input-div>div {
   position: relative;
   height: 40px;
 }
 
-.input-div > div h5 {
+.input-div>div h5 {
   position: absolute;
   left: 10px;
   top: 50%;
@@ -276,6 +283,9 @@ a:hover {
   display: flex;
   align-items: center;
   text-align: center;
+  position: relative;
+  animation-name: right-to-left;
+  animation-duration: 4s;
 }
 
 .content {
@@ -300,6 +310,7 @@ a:hover {
   position: relative;
   animation-name: confirm-animation;
   animation-duration: 4s;
+  animation-delay: .5s;
 }
 
 .fa-exclamation-circle {
@@ -310,70 +321,7 @@ a:hover {
   position: relative;
   animation-name: error-animation;
   animation-duration: 4s;
-}
-
-@keyframes confirm-animation {
-  0% {
-    background-color: #addb31;
-    left: 0px;
-    top: 0px;
-  }
-  25% {
-    background-color: #addb31;
-    left: 0px;
-    top: 0px;
-    font-size: 80px;
-  }
-  50% {
-    background-color: #addb31;
-    left: 0px;
-    top: 0px;
-    font-size: 50px;
-  }
-  75% {
-    background-color: green;
-    left: 0px;
-    top: 0px;
-    font-size: 80px;
-  }
-  100% {
-    background-color: #addb31;
-    left: 0px;
-    top: 0px;
-    font-size: 80px;
-  }
-}
-
-@keyframes error-animation {
-  0% {
-    color: #ff0000;
-    left: 0px;
-    top: 0px;
-  }
-  25% {
-    color: #ff0000;
-    left: 0px;
-    top: 0px;
-    font-size: 80px;
-  }
-  50% {
-    color: #ff0000;
-    left: 0px;
-    top: 0px;
-    font-size: 50px;
-  }
-  75% {
-    color: #ff1919;
-    left: 0px;
-    top: 0px;
-    font-size: 80px;
-  }
-  100% {
-    color: #ff0000;
-    left: 0px;
-    top: 0px;
-    font-size: 80px;
-  }
+  animation-delay: .5s;
 }
 
 .btn-container a {
@@ -402,7 +350,139 @@ a:hover {
   background-position: right;
 }
 
-/* ======== Media Query for Responsive ========*/
+/* =============== Keyframes ==============*/
+
+@keyframes left-to-right {
+  0% {
+    left: -500px;
+    top: 0;
+  }
+
+  25% {
+    left: 0px;
+    top: 0;
+  }
+
+  50% {
+    left: 0px;
+    top: 0;
+  }
+
+  75% {
+    left: 0px;
+    top: 0;
+  }
+
+  100% {
+    left: 0px;
+    top: 0;
+  }
+}
+
+@keyframes right-to-left {
+  0% {
+    left: 500px;
+    top: 0;
+  }
+
+  25% {
+    left: 0px;
+    top: 0;
+  }
+
+  50% {
+    left: 0px;
+    top: 0;
+  }
+
+  75% {
+    left: 0px;
+    top: 0;
+  }
+
+  100% {
+    left: 0px;
+    top: 0;
+  }
+}
+
+@keyframes confirm-animation {
+  0% {
+    background-color: #addb31;
+    left: 0px;
+    top: 0px;
+  }
+
+  25% {
+    background-color: #addb31;
+    left: 0px;
+    top: 0px;
+    font-size: 80px;
+  }
+
+  50% {
+    background-color: #addb31;
+    left: 0px;
+    top: 0px;
+    font-size: 50px;
+  }
+
+  75% {
+    background-color: green;
+    left: 0px;
+    top: 0px;
+    font-size: 80px;
+  }
+
+  100% {
+    background-color: #addb31;
+    left: 0px;
+    top: 0px;
+    font-size: 80px;
+  }
+}
+
+@keyframes error-animation {
+  0% {
+    color: #ff0000;
+    left: 0px;
+    top: 0px;
+  }
+
+  25% {
+    color: #ff0000;
+    left: 0px;
+    top: 0px;
+    font-size: 80px;
+  }
+
+  50% {
+    color: #ff0000;
+    left: 0px;
+    top: 0px;
+    font-size: 50px;
+  }
+
+  75% {
+    color: #ff1919;
+    left: 0px;
+    top: 0px;
+    font-size: 80px;
+  }
+
+  100% {
+    color: #ff0000;
+    left: 0px;
+    top: 0px;
+    font-size: 80px;
+  }
+}
+
+/* =============== End Keyframes ===============*/
+
+
+/* =============== Media Query for Responsive =============*/
+
 @media (max-width: 1050px) {
   .container {
     grid-gap: 5rem;
@@ -469,3 +549,5 @@ a:hover {
     width: 300px;
   }
 }
+
+/* ============== End Media Query for Responsive ============ */
