@@ -7,13 +7,15 @@ function focusFunc() {
     parent.classList.add('focus');
 }
 
+// Função para recolher o label dinâmico quando houver um clique do mouse fora do form
 function blurFunc() {
     let parent = this.parentNode.parentNode;
-    if (this.value ==  "") {
+    if (this.value == "") {
         parent.classList.remove('focus');
     }
 }
 
+// Função para adicionar os eventos
 inputs.forEach(input => {
     input.addEventListener('focus', focusFunc);
     input.addEventListener('blur', blurFunc);
