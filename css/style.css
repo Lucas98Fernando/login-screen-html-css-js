@@ -126,12 +126,12 @@ form h2 {
   transition: 0.3s;
 }
 
-.input-div>div {
+.input-div > div {
   position: relative;
   height: 40px;
 }
 
-.input-div>div h5 {
+.input-div > div h5 {
   position: absolute;
   left: 10px;
   top: 50%;
@@ -297,16 +297,48 @@ a:hover {
   color: #fff;
   background-color: #addb31;
   margin: 5px 0 25px;
+  position: relative;
+  animation-name: btn-animation;
+  animation-duration: 4s;
 }
 
-.login a {
+@keyframes btn-animation {
+  0% {
+    background-color: #addb31;
+    left: -100px;
+    top: 0px;
+  }
+  25% {
+    background-color: #addb31;
+    left: 100px;
+    top: 0px;
+  }
+  50% {
+    background-color: #addb31;
+    left: -100px;
+    top: 0px;
+  }
+  75% {
+    background-color: green;
+    left: 0px;
+    top: 0px;
+  }
+  100% {
+    background-color: #addb31;
+    left: 0px;
+    top: 0px;
+    font-size: 80px;
+  }
+}
+
+.btn-container a {
   display: flex;
   align-items: center;
   justify-content: center;
   align-content: center;
 }
 
-.btn-login {
+.btn-action {
   width: 100%;
   background-image: linear-gradient(to right, #db4b23, #e73d0e, #db4b23);
   color: #eeeeee;
@@ -320,7 +352,7 @@ a:hover {
   background-size: 200%;
 }
 
-.btn-login:hover {
+.btn-action:hover {
   color: #eaeaea;
   background-position: right;
 }
