@@ -1,4 +1,4 @@
-<h1 align="center">Login Screen using HTML, CSS and Javascript</h1>
+<h1 align="center">UI template using HTML, CSS and Javascript :fire:</h1>
 
 <h3>Login screen:</h3>
 <p align="center">
