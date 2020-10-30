@@ -40,6 +40,7 @@ body {
   position: relative;
   animation-name: left-to-right;
   animation-duration: 4s;
+  animation-timing-function: linear;
 }
 
 .login-container {
@@ -49,6 +50,7 @@ body {
   position: relative;
   animation-name: right-to-left;
   animation-duration: 4s;
+  animation-timing-function: linear;
 }
 
 .forgot {
@@ -64,7 +66,7 @@ form {
 }
 
 .avatar {
-  width: 100px;
+  width: 50px;
 }
 
 form h2 {
@@ -133,12 +135,12 @@ form h2 {
   transition: 0.3s;
 }
 
-.input-div>div {
+.input-div > div {
   position: relative;
   height: 40px;
 }
 
-.input-div>div h5 {
+.input-div > div h5 {
   position: absolute;
   left: 10px;
   top: 50%;
@@ -256,7 +258,14 @@ a:hover {
   display: flex;
   justify-content: flex-start;
   align-items: center;
+  align-content: center;
   margin: 0px 10px 15px 0px;
+}
+
+.terms a {
+  color: #db4b23;
+  cursor: pointer;
+  font-size: 1rem;
 }
 
 .terms input {
@@ -286,6 +295,7 @@ a:hover {
   position: relative;
   animation-name: right-to-left;
   animation-duration: 4s;
+  animation-timing-function: linear;
 }
 
 .content {
@@ -310,7 +320,7 @@ a:hover {
   position: relative;
   animation-name: confirm-animation;
   animation-duration: 4s;
-  animation-delay: .5s;
+  animation-delay: 0.5s;
 }
 
 .fa-exclamation-circle {
@@ -321,7 +331,7 @@ a:hover {
   position: relative;
   animation-name: error-animation;
   animation-duration: 4s;
-  animation-delay: .5s;
+  animation-delay: 0.5s;
 }
 
 .btn-container a {
@@ -348,6 +358,59 @@ a:hover {
 .btn-action:hover {
   color: #eaeaea;
   background-position: right;
+}
+
+/* =============== Modal ====================== */
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding: 30px 0; /* Location of the box */
+  left: 0;
+  top: 0;
+  margin: 0 auto;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  border-radius: 15px;
+  width: 75%;
+}
+
+.modal-content h2 {
+  padding-bottom: 20px;
+}
+
+.modal-content p {
+  text-align: left;
+}
+
+.modal-content span {
+  color: #ff1919;
+}
+
+.modal-content span:hover {
+  color: #ff0000;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
 }
 
 /* =============== Keyframes for animations ==============*/
@@ -480,7 +543,6 @@ a:hover {
 
 /* =============== End Keyframes ===============*/
 
-
 /* =============== Media Query for Responsive =============*/
 
 @media (max-width: 1050px) {
@@ -538,6 +600,12 @@ a:hover {
 
   .terms {
     margin: 0;
+    flex-wrap: wrap;
+  }
+
+  .terms a {
+    font-size: 1.1rem;
+    margin-bottom: 15px;
   }
 
   .terms input {
@@ -547,6 +615,12 @@ a:hover {
 
   .content {
     width: 300px;
+  }
+}
+
+@media (min-width: 600px) {
+  .terms a {
+    padding-left: 5px;
   }
 }
 
