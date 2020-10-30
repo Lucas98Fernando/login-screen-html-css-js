@@ -21,26 +21,26 @@ inputs.forEach(input => {
     input.addEventListener('blur', blurFunc);
 });
 
-// Get the modal
+// Pegando o modal
 var modal = document.getElementById("modal-terms");
 
-// Get the button that opens the modal
+// Pegando o botão que dispara o modal
 var btn = document.getElementById("action-modal");
 
-// Get the <span> element that closes the modal
+// Pegando o elemento <span> que fecha o modal
 var span = document.getElementsByClassName("close")[0];
 
-// When the user clicks the button, open the modal 
+// Quando o usuário clicar no botão, o modal será exibido 
 btn.onclick = function () {
     modal.style.display = "block";
 }
 
-// When the user clicks on <span> (x), close the modal
+// Quando o usuário clicar no <span> (x), o modal será fechado
 span.onclick = function () {
     modal.style.display = "none";
 }
 
-// When the user clicks anywhere outside of the modal, close it
+// Quando o usuário clicar em qualquer lugar fora do modal, ele será fechado
 window.onclick = function (event) {
     if (event.target == modal) {
         modal.style.display = "none";
