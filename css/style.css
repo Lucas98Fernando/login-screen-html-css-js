@@ -24,7 +24,7 @@ body {
   height: 100vh;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-gap: 9rem;
+  column-gap: 10rem;
   padding: 0 2rem;
   overflow-x: hidden;
 }
@@ -131,12 +131,12 @@ form h2 {
   transition: 0.3s;
 }
 
-.input-div > div {
+.input-div>div {
   position: relative;
   height: 40px;
 }
 
-.input-div > div h5 {
+.input-div>div h5 {
   position: absolute;
   left: 10px;
   top: 50%;
@@ -356,22 +356,31 @@ a:hover {
   background-position: right;
 }
 
-/* =============== Modal ====================== */
+/* ================ Modal ====================== */
 
 /* The Modal (background) */
 .modal {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
-  padding: 30px 0; /* Location of the box */
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Sit on top */
+  padding: 30px 0;
+  /* Location of the box */
   left: 0;
   top: 0;
   margin: 0 auto;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0, 0, 0); /* Fallback color */
-  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0);
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4);
+  /* Black w/ opacity */
 }
 
 /* Modal Content */
@@ -543,7 +552,7 @@ a:hover {
 
 @media (max-width: 1050px) {
   .container {
-    grid-gap: 5rem;
+    column-gap: 5rem;
   }
 }
 
@@ -573,6 +582,7 @@ a:hover {
 
   .container {
     grid-template-columns: 1fr;
+    background-color: #db4b23;
   }
 
   .wave {
@@ -597,6 +607,7 @@ a:hover {
   .terms {
     margin: 0;
     flex-wrap: wrap;
+    justify-content: center;
   }
 
   .terms a {
